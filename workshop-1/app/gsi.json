@@ -1,0 +1,42 @@
+[
+  {
+    "IndexName": "LawChaosIndex",
+    "KeySchema": [
+      {
+        "AttributeName": "LawChaos",
+        "KeyType": "HASH"
+      },
+      {
+        "AttributeName": "MysfitId",
+        "KeyType": "RANGE"
+      }
+    ],
+    "Projection": {
+      "ProjectionType": "ALL"
+    },
+    "ProvisionedThroughput": {
+      "ReadCapacityUnits": 5,
+      "WriteCapacityUnits": 5
+    }
+  },
+  {
+    "IndexName": "GoodEvilIndex",
+    "KeySchema": [
+      {
+        "AttributeName": "GoodEvil",
+        "KeyType": "HASH"
+      },
+      {
+        "AttributeName": "MysfitId",
+        "KeyType": "RANGE"
+      }
+    ],
+    "Projection": {
+      "ProjectionType": "ALL"
+    },
+    "ProvisionedThroughput": {
+      "ReadCapacityUnits": 5,
+      "WriteCapacityUnits": 5
+    }
+  }
+]
